@@ -1,55 +1,64 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- Sync Impact Report:
+Version change: 1.1.0 → 1.1.1
+Modified principles: None
+Added sections: None
+Removed sections: None
+Templates requiring updates:
+- .specify/templates/plan-template.md: ⚠ pending
+- .specify/templates/spec-template.md: ⚠ pending
+- .specify/templates/tasks-template.md: ⚠ pending
+- .specify/templates/commands/sp.constitution.md: ⚠ pending
+- .specify/templates/commands/sp.adr.md: ⚠ pending
+- .specify/templates/commands/sp.analyze.md: ⚠ pending
+- .specify/templates/commands/sp.checklist.md: ⚠ pending
+- .specify/templates/commands/sp.clarify.md: ⚠ pending
+- .specify/templates/commands/sp.git.commit_pr.md: ⚠ pending
+- .specify/templates/commands/sp.implement.md: ⚠ pending
+- .specify/templates/commands/sp.phr.md: ⚠ pending
+- .specify/templates/commands/sp.plan.md: ⚠ pending
+- .specify/templates/commands/sp.specify.md: ⚠ pending
+- .specify/templates/commands/sp.tasks.md: ⚠ pending
+- README.md: ⚠ pending
+TODOs:
+- TODO(RATIFICATION_DATE): Original adoption date unknown
+-->
+# AI-Native Technical Book + Integrated RAG Chatbot Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Technical Accuracy
+All robotics, AI, ROS 2, Gazebo, Isaac Sim, and VLA concepts must match official documentation and published standards.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. System-Level Coherence
+Book chapters must follow a progressing learning arc from theory → simulation → deployment → humanoid autonomy.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Consistency
+Terminology must remain consistent across modules (e.g., ROS 2 Nodes, Nav2, VSLAM, URDF, Digital Twin, VLA).
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Explainability
+Content should be understandable to senior undergrads in AI/CS/Robotics.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Source Transparency
+Claims about AI performance, robotics algorithms, or simulation frameworks must be traceable to credible sources.
 
-### [PRINCIPLE_6_NAME]
+### VI. Grounded RAG Chatbot Responses
+The integrated RAG Chatbot MUST answer ONLY from book content unless user-selected text is provided, ensuring factual grounding.
 
+## Key Standards & Requirements
 
-[PRINCIPLE__DESCRIPTION]
+- **Writing Style**: Technical and educational, structured for Docusaurus MDX chapters. Code examples must be real, runnable, and validated using Spec-Kit Plus. Visual diagrams must be described so Claude Code can generate them reproducibly.
+- **Source Requirements**: Minimum 30 sources, with at least 40% formal/academic (papers, whitepapers, ROS 2 docs, NVIDIA Isaac docs). Remaining sources from reputable industry docs (OpenAI, Qdrant, Neon, FastAPI, Unity, Gazebo, ROS). No unverified claims about robot capabilities or AI safety aspects.
+- **Citation Style**: IEEE or inline technical citation style. Each module must have a References section. API references must cite official docs.
+- **Book Structure**: Minimum 4 modules (ROS 2, Digital Twin, AI-Robot Brain, Vision-Language-Action (VLA)). Capstone Chapter: Autonomous Humanoid Pipeline (Voice command → plan → ROS 2 actions → navigation → object detection → manipulation). Total word count: 20,000 – 30,000 words; each module: 4,000 – 5,000 words. Must compile to Docusaurus Markdown (MDX). All code fenced using ```python, ```xml, ```bash, ```ros2 standards.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## RAG Chatbot Implementation Standards
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+- **Retrieval Requirements**: Use Qdrant Cloud Free Tier for vector storage. Use Neon Serverless Postgres for metadata + chat history. Embeddings: OpenAI embeddings or ChatKit embeddings.
+- **API Requirements**: Backend: FastAPI. SDK: OpenAI Agents / ChatKit. Claude Code can generate entire stack reproducibly.
+- **Chatbot Functionality**: Must support full-book querying, section-specific questioning, and an “Answer from selected text only” mode.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+All generated content must be reproducible via Claude Code. All ROS 2, Gazebo, Isaac, and Unity examples MUST run or compile. Amendments to this Constitution require a formal proposal, review by core stakeholders, and a majority approval. All changes must be documented via version control. Compliance with these principles will be reviewed periodically by the project leadership.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.1.1 | **Ratified**: TODO(RATIFICATION_DATE): Original adoption date unknown | **Last Amended**: 2025-12-10

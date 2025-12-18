@@ -1,0 +1,15 @@
+# npm ignore patterns
+*.log
+*.swp
+*.tmp
+.env*
+coverage/
+node_modules/
+dist/
+build/
+.DS_Store
+Thumbs.db
+*.test.js
+*.spec.js
+.vscode/
+.idea/

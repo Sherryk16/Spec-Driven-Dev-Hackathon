@@ -1,0 +1,105 @@
+---
+sidebar_position: 8
+---
+
+# API Contract (OpenAPI)
+
+This document defines the OpenAPI 3.0 specification for the RAG Chatbot API.
+
+```yaml
+openapi: 3.0.3
+info:
+  title: RAG Chatbot API
+  description: API for the AI-Native Technical Book RAG Chatbot.
+  version: 1.0.0
+servers:
+  - url: /api/v1
+paths:
+  /chat:
+    post:
+      summary: Post a message to a chat session
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChatMessageRequest'
+      responses:
+        '200':
+          description: The assistant's response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChatMessage'
+        '422':
+          description: Validation Error
+  /chat-sessions/{session_id}/history:
+    get:
+      summary: Get the history of a chat session
+      parameters:
+        - name: session_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: A list of chat messages
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ChatMessage'
+        '404':
+          description: Chat session not found
+
+components:
+  schemas:
+    ChatMessageRequest:
+      type: object
+      properties:
+        session_id:
+          type: string
+          format: uuid
+          description: The ID of the current chat session. If null, a new session is created.
+          nullable: true
+        user_id:
+          type: string
+          description: A unique identifier for the user.
+        content:
+          type: string
+          description: The user's message.
+      required:
+        - user_id
+        - content
+
+    ChatMessage:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        session_id:
+          type: string
+          format: uuid
+        role:
+          type: string
+          enum: [user, assistant]
+        content:
+          type: string
+        created_at:
+          type: string
+          format: date-time
+        metadata:
+          type: object
+          nullable: true
+          description: Sources used for the assistant's response.
+      required:
+        - id
+        - session_id
+        - role
+        - content
+        - created_at
+```

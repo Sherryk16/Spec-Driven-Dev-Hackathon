@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Implementation Plan: Book Module 4 - Vision-Language-Action (VLA)
 
-**Branch**: `005-vla-module-4` | **Date**: 2025-12-10 | **Spec**: [spec.md](./spec.md)
+**Branch**: `005-vla-module-4` | **Date**: 2025-12-10 | **Spec**: [spec.md](/docs/vla-module/spec)
 **Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
 
 **Note**: This template is filled in by the `/sp.plan` command. See `.specify/templates/commands/plan.md` 

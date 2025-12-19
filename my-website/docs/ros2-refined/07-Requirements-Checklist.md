@@ -7,7 +7,7 @@ sidebar_position: 7
 
 **Purpose**: Validate specification completeness and quality before proceeding to planning
 **Created**: 2025-12-10
-**Feature**: [Link to spec.md](./spec.md)
+**Feature**: [Link to spec.md](/docs/ros2-refined/spec-v2)
 
 ## Content Quality
 

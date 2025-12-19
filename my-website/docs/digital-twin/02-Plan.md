@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Implementation Plan: Book Module 2 - The Digital Twin
 
-**Branch**: `003-digital-twin-module-2` | **Date**: 2025-12-10 | **Spec**: [spec.md](./spec.md)
+**Branch**: `003-digital-twin-module-2` | **Date**: 2025-12-10 | **Spec**: [spec.md](/docs/digital-twin/spec)
 **Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
 
 **Note**: This template is filled in by the `/sp.plan` command. See `.specify/templates/commands/plan.md` 

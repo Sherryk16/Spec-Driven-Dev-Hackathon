@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Implementation Plan: AI-Native Book & RAG Chatbot
 
-**Branch**: `002-ros2-module-1` | **Date**: 2025-12-10 | **Spec**: [spec.md](./spec.md)
+**Branch**: `002-ros2-module-1` | **Date**: 2025-12-10 | **Spec**: [spec.md](/docs/ros2-refined/spec-v2)
 **Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
 
 **Note**: This template is filled in by the `/sp.plan` command. See `.specify/templates/commands/plan.md` for the execution workflow.

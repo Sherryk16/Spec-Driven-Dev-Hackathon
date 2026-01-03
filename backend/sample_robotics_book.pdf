@@ -1,0 +1,84 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+>>
+>>
+>>
+endobj
+
+4 0 obj
+<<
+/Length 100
+>>
+stream
+BT
+/F1 12 Tf
+72 720 Td
+(Welcome to the Robotics and AI Handbook) Tj
+T* 15 TL
+( )' Tj
+(Chapter 1: Introduction to Robotics) Tj
+T* ( )' Tj
+(Robotics is an interdisciplinary branch of engineering and science that includes mechanical engineering, electrical engineering, computer science, and others. It deals with the design, construction, operation, and use of robots, as well as computer systems for their control, sensory feedback, and information processing.) Tj
+T* ( )' Tj
+(Chapter 2: Artificial Intelligence in Robotics) Tj
+T* ( )' Tj
+(Artificial intelligence (AI) in robotics is the combination of sensors, software, and data-processing capabilities that allow robots to learn from experience, adapt to new inputs, and perform human-like tasks. These intelligent machines can interpret stimuli and respond accordingly.) Tj
+T* ( )' Tj
+(Chapter 3: ROS 2 Fundamentals) Tj
+T* ( )' Tj
+(ROS 2 (Robot Operating System 2) is flexible framework for writing robot software. It is a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behavior across a wide variety of robotic platforms.) Tj
+T* ( )' Tj
+(Chapter 4: Digital Twins in Robotics) Tj
+T* ( )' Tj
+(A digital twin is a virtual representation that serves as the real-time digital counterpart of a physical object or process. In robotics, digital twins enable engineers to simulate, predict, and optimize robot behavior before implementing changes in the physical world.) Tj
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+xref
+0 6
+0000000000 65535 f 
+0000000010 00000 n 
+0000000053 00000 n 
+0000000125 00000 n 
+0000000341 00000 n 
+0000000881 00000 n 
+trailer
+<<
+/Size 6
+/Root 1 0 R
+>>
+startxref
+942
+%%EOF

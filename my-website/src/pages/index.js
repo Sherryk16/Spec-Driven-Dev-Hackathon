@@ -6,6 +6,7 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
+import Chatbot from '../components/Chatbot';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -97,6 +98,7 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageModules />
+        <Chatbot />
       </main>
     </Layout>
   );

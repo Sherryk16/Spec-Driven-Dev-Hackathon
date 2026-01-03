@@ -1,0 +1,15 @@
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+cohere==4.3.1
+qdrant-client==1.7.0
+sqlalchemy==2.0.23
+asyncpg==0.29.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+python-multipart==0.0.6
+pypdf==3.17.2
+ebooklib==0.18
+beautifulsoup4==4.12.2
+lxml==4.9.3
+tiktoken==0.5.2
+requests==2.31.0

@@ -1,0 +1,22 @@
+[tool.black]
+line-length = 88
+target-version = ['py311']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.venv
+  | venv
+  | build
+  | dist
+  | __pycache__
+)/
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+known_first_party = ["src"]
+known_third_party = ["fastapi", "uvicorn", "cohere", "qdrant_client", "sqlalchemy", "asyncpg", "pydantic", "pydantic_settings", "python_multipart", "pypdf", "ebooklib", "bs4", "lxml"]
